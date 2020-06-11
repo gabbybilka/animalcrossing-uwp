@@ -9,6 +9,19 @@
     <Grid x:Name="ContentArea" Margin="{StaticResource MediumLeftRightMargin}">
         <Grid
             Background="{ThemeResource SystemControlPageBackgroundChromeLowBrush}">
+            <TextBlock HorizontalAlignment="Left" Margin="52,38,0,0" Text="ACNH Turnip Calculator" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="24"/>
+            <Border BorderThickness="3,3,3,3" HorizontalAlignment="Center" Height="118" Margin="0,92,0,0" VerticalAlignment="Top" Width="1128" CornerRadius="3,3,3,3" Background="#FF99BF99">
+                <Border.BorderBrush>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#FF050F05" Offset="0"/>
+                        <GradientStop Color="#FF073807" Offset="1"/>
+                    </LinearGradientBrush>
+                </Border.BorderBrush>
+                <Border BorderThickness="1" BorderBrush="#FF1A411A" HorizontalAlignment="Left" Height="64" Margin="45,25,0,0" VerticalAlignment="Top" Width="200" Background="#FF1A411A" CornerRadius="10,10,10,10">
+                    <TextBox x:Name="BuyPriceTextBox" Text="TextBox" TextWrapping="Wrap" HorizontalAlignment="Left" Width="143" Margin="34,28,0,-1" TextChanged="TextBox_TextChanged"/>
+                </Border>
+            </Border>
+            <Border BorderThickness="1" BorderBrush="#FF1A411A" HorizontalAlignment="Left" Height="64" Margin="523,119,0,0" VerticalAlignment="Top" Width="573" Background="#FF1A411A" CornerRadius="10,10,10,10"/>
             <!--
                 The SystemControlPageBackgroundChromeLowBrush background represents where you should place your content. 
                 Place your content here.
